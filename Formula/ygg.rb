@@ -5,21 +5,21 @@
 class Ygg < Formula
   desc "Simple CLI for managing git worktrees"
   homepage "https://github.com/joch/ygg"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joch/ygg/releases/download/v0.4.0/ygg_0.4.0_Darwin_x86_64.tar.gz"
-      sha256 "fbb80e375f6639766c2b9a8c833d05d20915be37596c77c04ab6e79420ae60fa"
+      url "https://github.com/joch/ygg/releases/download/v0.5.0/ygg_0.5.0_Darwin_x86_64.tar.gz"
+      sha256 "feb42b119393acb9261015c468e2172699d4a02a39d0c52e94d20e105814125f"
 
       define_method(:install) do
         bin.install "ygg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joch/ygg/releases/download/v0.4.0/ygg_0.4.0_Darwin_arm64.tar.gz"
-      sha256 "d6686f78116f3d854fd52b35dbea08e755d42083aaabbdc0ea5a26fe6b239c7e"
+      url "https://github.com/joch/ygg/releases/download/v0.5.0/ygg_0.5.0_Darwin_arm64.tar.gz"
+      sha256 "42b7e15162d5875fd1c8457fc8215b2f05c0622f90c1d9324cf1adf67bcb6cc9"
 
       define_method(:install) do
         bin.install "ygg"
@@ -29,15 +29,15 @@ class Ygg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joch/ygg/releases/download/v0.4.0/ygg_0.4.0_Linux_x86_64.tar.gz"
-      sha256 "1ae23eac23ec1836a49ed39e190787804a2c28624be674c9d718453965506599"
+      url "https://github.com/joch/ygg/releases/download/v0.5.0/ygg_0.5.0_Linux_x86_64.tar.gz"
+      sha256 "02f0cabe3af888fb8b79da557978ed3d6cac8a8813bcd817a6f928c7481070c8"
       define_method(:install) do
         bin.install "ygg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joch/ygg/releases/download/v0.4.0/ygg_0.4.0_Linux_arm64.tar.gz"
-      sha256 "8f0771f09736ea7a982062392aeb2e0a3832e79b36afe48071ee77d312fc9132"
+      url "https://github.com/joch/ygg/releases/download/v0.5.0/ygg_0.5.0_Linux_arm64.tar.gz"
+      sha256 "6ff0ae7babdc40f9c16d9980b0132754a0fc9e04820a75b14c746f10c30417ff"
       define_method(:install) do
         bin.install "ygg"
       end
